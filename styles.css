@@ -1,0 +1,147 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #e0f0ff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  
+  header h1 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  header p {
+    color: #555;
+    font-size: 18px;
+  }
+  
+  /* Toggle Switch */
+  .switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  #skills ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #skills li {
+    background-color: #e0f7ff;
+    padding: 8px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 4px;
+  }
+  
+  footer {
+    background-color: #ddefff;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  footer a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  header.dark-mode {
+    background-color: #1e1e1e;
+  }
+  
+  header.dark-mode h1,
+  header.dark-mode p {
+    color: #e0e0e0;
+  }
+  
+  section.dark-mode {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+  
+  #skills li.dark-mode {
+    background-color: #333;
+  }
+  
+  footer.dark-mode {
+    background-color: #1e1e1e;
+  }
+  
+  footer.dark-mode a {
+    color: #b3d4fc;
+  }
